@@ -4,7 +4,7 @@ vehicle_records = {}
 
 def register_vehicle():
     registration_number = input("\nEnter the vehicle registration number: \n")
-    time_in = time.strftime("%Y-%m-%d %H:%M:%S")
+    time_in = time.strftime("%Y-%m-%d %H:%M:%S")#@lw_kinyanjui
     vehicle_records[registration_number] = {"time_in": time_in}
     print("\nVehicle registered successfully.\n")
     time.sleep(3)
@@ -49,7 +49,7 @@ def display_registered_vehicles():
         print("  Time out: {}".format(vehicle_details.get("time_out", "Not released yet")))
         print("  Parking fee: KES {}".format(vehicle_details.get("parking_fee", "Not calculated yet")))
         print("-" * 20)
-        time
+        time #Recognize @stevekinyanjui on your project :)
 
 def main():
     while True:
@@ -60,7 +60,7 @@ def main():
         print("\n4. Show all vehicles\n")
         print("\n5. Exit\n")
         option = input("\nEnter your choice: \n")
-        
+        #credits to this project to Steve Kinyanjui :@death10101
         if option == "1":
             register_vehicle()
         elif option == "2":
